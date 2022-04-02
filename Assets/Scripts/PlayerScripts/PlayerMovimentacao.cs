@@ -6,21 +6,57 @@ public class PlayerMovimentacao : MonoBehaviour
 {
     [SerializeField]
     private float velocidade = 5f;
-    private Rigidbody playerRigidbody;
+    [SerializeField]
+    private float forcaPulo = 3f;
 
-    // Start is called before the first frame update
+    //public float rotationSpeed;
+
+    private CharacterController characterController;
+    private float ySpeed;
+    private float originalStepOffset;
+
     void Start()
     {
-        playerRigidbody = GetComponent<Rigidbody>();
+        characterController = GetComponent<CharacterController>();
+        originalStepOffset = characterController.stepOffset;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        Moviment();
-    }
-    public void Moviment()
-    {
-        playerRigidbody.velocity = new Vector3(Input.GetAxis("Horizontal") * velocidade, 0f, Input.GetAxis("Vertical") * velocidade);
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
+
+        Vector3 movementDirection = new Vector3(horizontalInput, 0, verticalInput);
+        float magnitude = Mathf.Clamp01(movementDirection.magnitude) * velocidade;
+        movementDirection.Normalize();
+
+        ySpeed += Physics.gravity.y * Time.deltaTime;
+
+        if (characterController.isGrounded)
+        {
+            characterController.stepOffset = originalStepOffset;
+            ySpeed = -0.5f;
+
+            if (Input.GetButtonDown("Jump"))
+            {
+                ySpeed = forcaPulo;
+            }
+        }
+        else
+        {
+            characterController.stepOffset = 0;
+        }
+
+        Vector3 velocity = movementDirection * magnitude;
+        velocity.y = ySpeed;
+
+        characterController.Move(velocity * Time.deltaTime);
+
+        //if (movementDirection != Vector3.zero)
+        //{
+        //    Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
+
+        //    transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+        //}
     }
 }
