@@ -8,6 +8,10 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+    public void GoToCredits ()
+    {
+        SceneManager.LoadScene("Credits_Scene");
+    }
     public void QuitGame ()
     {
         Application.Quit();
