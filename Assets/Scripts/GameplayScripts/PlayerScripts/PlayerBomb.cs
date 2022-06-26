@@ -14,13 +14,28 @@ public class PlayerBomb : MonoBehaviour
 
     IEnumerator StartExplotion()
     {
-        yield return new WaitForSecondsRealtime(4);
+        yield return new WaitForSecondsRealtime(2);
         explotionCollider.enabled = true;
         StartCoroutine(SafetyDelay());
     }
     IEnumerator SafetyDelay ()
     {
-        yield return new WaitForSecondsRealtime(2);
+        yield return new WaitForSecondsRealtime(4);
         Destroy(gameObject);
+    }
+    private void OnTriggerEnter(Collider other) 
+    {
+        if(other.CompareTag("Enemy"))
+        {
+            Debug.Log("Entrou");            
+        }    
+    }
+    private void OnTriggerStay(Collider other) 
+    {
+        if(other.CompareTag("Enemy"))
+        {
+            Debug.Log("Entrou");            
+        }    
+        
     }
 }

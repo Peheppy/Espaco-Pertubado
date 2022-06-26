@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: cc0fdd495b26ade4eae7e14c1731c911
+guid: 578af439cd342d24a8e349577f9a65ef
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -104,13 +104,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Barra de Vida_0
+      name: BarraDeMagia_0
       rect:
         serializedVersion: 2
-        x: 150
-        y: 1913
-        width: 656
-        height: 234
+        x: 579
+        y: 589
+        width: 537
+        height: 184
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -118,20 +118,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e4f04e6c4b244e4cb5f6f8ff3e604ac
-      internalID: 107497102
+      spriteID: 902b620fea0b5664e8541938b70f729c
+      internalID: -570017370
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Barra de Vida_1
+      name: BarraDeMagia_1
       rect:
         serializedVersion: 2
-        x: 167
-        y: 1441
-        width: 654
-        height: 233
+        x: 568
+        y: 354
+        width: 537
+        height: 186
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,20 +139,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19cb3dc96201b9649a9089a0260024c8
-      internalID: -2108235524
+      spriteID: 079bdc86b220f4340b09b17c6182271d
+      internalID: -321508683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Barra de Vida_2
+      name: BarraDeMagia_2
       rect:
         serializedVersion: 2
-        x: 122
-        y: 1039
-        width: 652
-        height: 240
+        x: 531
+        y: 50
+        width: 535
+        height: 185
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3248acec7c3f864191826b62801fd89
-      internalID: 515492840
+      spriteID: 4783065cd870484449185bdabb6a4631
+      internalID: -1450725002
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Barra de Vida_3
+      name: BarraDeMagia_3
       rect:
         serializedVersion: 2
-        x: 121
-        y: 737
-        width: 657
-        height: 230
+        x: 33
+        y: 248
+        width: 539
+        height: 185
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +181,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4df6189e9ba632c47a7ffdddaf91c1c8
-      internalID: 1540075932
+      spriteID: 547d39d8e7a750d49b32e6feb5a2b2de
+      internalID: -1894771815
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Barra de Vida_4
+      name: BarraDeMagia_4
       rect:
         serializedVersion: 2
-        x: 146
-        y: 356
-        width: 658
-        height: 235
+        x: 16
+        y: 569
+        width: 537
+        height: 189
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -202,8 +202,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a9fdae1164f3184885812b3d55e84c1
-      internalID: -1076189643
+      spriteID: 103ece0487124994193dfcc836ee022f
+      internalID: -1195633277
       vertices: []
       indices: 
       edges: []
@@ -211,7 +211,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: f0ac23fe347cb334595ee124356f58b1
+    spriteID: 05ab03aa8836b0e429fd8f32994e5079
     internalID: 0
     vertices: []
     indices: 
@@ -219,11 +219,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Barra de Vida_3: 1540075932
-      Barra de Vida_0: 107497102
-      Barra de Vida_1: -2108235524
-      Barra de Vida_4: -1076189643
-      Barra de Vida_2: 515492840
+      BarraDeMagia_2: -1450725002
+      BarraDeMagia_3: -1894771815
+      BarraDeMagia_0: -570017370
+      BarraDeMagia_1: -321508683
+      BarraDeMagia_4: -1195633277
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

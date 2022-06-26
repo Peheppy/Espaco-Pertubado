@@ -8,6 +8,7 @@ public class PlayerMagic : MonoBehaviour
     [SerializeField]
     private GameObject bomb;
     private Transform playerTransform;
+    private bool updateDelay;
     private bool delayIsActive;
     // Start is called before the first frame update
     private void Awake() 
@@ -16,14 +17,19 @@ public class PlayerMagic : MonoBehaviour
     }
     private void Start() 
     {
+        updateDelay = false;
         delayIsActive = false;
         playerTransform = GetComponent<Transform>();    
     }
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(PlayerMP.value);
         CastAttack();
+        if(PlayerMP.value < 4f && !updateDelay)
+        {
+            updateDelay = true;
+            StartCoroutine(GenerateMana());
+        }
     }
     public void CastAttack ()
     {
@@ -43,5 +49,11 @@ public class PlayerMagic : MonoBehaviour
     {
         yield return new WaitForSecondsRealtime(3);
         delayIsActive = false;
+    }
+    IEnumerator GenerateMana()
+    {
+        yield return new WaitForSecondsRealtime(10);
+        PlayerMP.value += 1f;
+        updateDelay = false;
     }
 }

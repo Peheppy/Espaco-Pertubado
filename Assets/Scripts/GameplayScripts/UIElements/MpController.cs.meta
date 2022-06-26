@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 093b0162cbc9171419125b474776c55e
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - PlayerMp: {fileID: 11400000, guid: e82d8275462c25544bad8661b80a9c41, type: 2}
+  - Mp4: {fileID: -570017370, guid: 578af439cd342d24a8e349577f9a65ef, type: 3}
+  - Mp3: {fileID: -321508683, guid: 578af439cd342d24a8e349577f9a65ef, type: 3}
+  - Mp2: {fileID: -1450725002, guid: 578af439cd342d24a8e349577f9a65ef, type: 3}
+  - Mp1: {fileID: -1894771815, guid: 578af439cd342d24a8e349577f9a65ef, type: 3}
+  - Mp0: {fileID: -1195633277, guid: 578af439cd342d24a8e349577f9a65ef, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
