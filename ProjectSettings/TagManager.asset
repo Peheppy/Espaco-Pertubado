@@ -8,7 +8,10 @@ TagManager:
   - Water
   - Key
   - Credits
-  - PlayerAttack
+  - GameMusic
+  - MainMenu
+  - Gameplay
+  - GameOver
   layers:
   - Default
   - TransparentFX

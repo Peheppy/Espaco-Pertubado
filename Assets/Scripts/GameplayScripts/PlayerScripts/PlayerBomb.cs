@@ -20,22 +20,15 @@ public class PlayerBomb : MonoBehaviour
     }
     IEnumerator SafetyDelay ()
     {
-        yield return new WaitForSecondsRealtime(4);
+        yield return new WaitForSecondsRealtime(2);
         Destroy(gameObject);
     }
     private void OnTriggerEnter(Collider other) 
     {
         if(other.CompareTag("Enemy"))
         {
-            Debug.Log("Entrou");            
+            Destroy(other.gameObject);        
         }    
     }
-    private void OnTriggerStay(Collider other) 
-    {
-        if(other.CompareTag("Enemy"))
-        {
-            Debug.Log("Entrou");            
-        }    
-        
-    }
+    
 }

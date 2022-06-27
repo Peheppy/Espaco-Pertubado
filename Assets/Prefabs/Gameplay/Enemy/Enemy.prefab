@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTransform: {fileID: 0}
-  enemyVelocity: 10
+  enemyVelocity: 7
 --- !u!65 &4426191561789299597
 BoxCollider:
   m_ObjectHideFlags: 0

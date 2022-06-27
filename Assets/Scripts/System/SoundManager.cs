@@ -7,6 +7,9 @@ public class SoundManager : MonoBehaviour
 {
     [SerializeField]
     Slider volumeSlider;
+
+    public SliderVariable volumeSliderSO;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -34,9 +37,8 @@ public class SoundManager : MonoBehaviour
     {
         PlayerPrefs.SetFloat("musicVolume", volumeSlider.value);
     }
-    // Update is called once per frame
-    void Update()
+    private void Update() 
     {
-        
+        volumeSliderSO.value = volumeSlider;     
     }
 }

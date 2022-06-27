@@ -20,7 +20,7 @@ public class PlayerHealthAndKeys : MonoBehaviour
 
     private void OnTriggerEnter(Collider other) 
     {
-        if(other.CompareTag("EnemyAttack") || other.CompareTag("Enemy"))
+        if(other.CompareTag("Enemy"))
         {
             playerHealth.value -= 1f;
             
